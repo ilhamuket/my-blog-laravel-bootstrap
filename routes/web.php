@@ -20,7 +20,8 @@ use App\Http\Controllers\PostController;
 
 Route::get('/', function () {
     return view('home', [
-        "title" => "Home"
+        "title" => "Home",
+        "active" => "home",
     ]);
 });
 
@@ -29,7 +30,8 @@ Route::get('/about', function () {
         "name" => "Muhammad Ilham",
         "email" => "muhammadilham6676@gmail.com",
         "image" => "ilham.jpg",
-        "title" => "About"
+        "title" => "About",
+        "active" => "about",
     ]);
 });
 
